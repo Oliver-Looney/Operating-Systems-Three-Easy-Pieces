@@ -71,5 +71,13 @@ Examples:
 - `-g`: include debug symbols (useful with `gdb` or crash backtraces).
 - `-pthread`: add when using pthreads (threads, mutexes, condvars).
 
-Optional while debugging:
-- Add `-fsanitize=address,undefined` to detect memory/UB issues (Linux, recent compilers).
+## Colima (optional)
+
+Prefer a lighter engine than Docker Desktop on macOS?
+
+```
+brew install colima docker
+colima start --cpu 2 --memory 2
+# use the same commands as above (e.g., ./scripts/devshell.sh)
+colima stop
+```
