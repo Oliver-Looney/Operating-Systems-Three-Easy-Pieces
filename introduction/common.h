@@ -2,6 +2,7 @@
 #define __common_h__
 
 #include <assert.h>
+#include <stddef.h> // for NULL
 #include <sys/stat.h>
 #include <sys/time.h>
 
